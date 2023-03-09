@@ -1,0 +1,371 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin-left: 40px;
+  /* color: #e84393; */
+  color: white;
+}
+.nav-link:hover {
+  background-color: #e84393;
+  color: aliceblue;
+  border-radius: 8px;
+}
+
+.navbar-nav {
+  margin-left: 600px;
+}
+
+#n
+{
+  background: #c71d6f5d;
+  /* z-index: 1; */
+
+}
+
+.navbar-brand {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fcf9fa;
+}
+
+.navbar-brand:hover {
+  background-color: #e84393;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+.info {
+  font-size: 20px;
+  padding-left: 695px;
+}
+
+.info2
+{
+  padding-left: 695px;
+  font-size: 20px;
+  /* margin-top: 20px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.con
+{
+  padding-top: 200px;
+}
+
+.con img{ 
+  width: 100%;
+  position: absolute;
+  top: -20vh;
+  z-index: -1;
+  /* padding-top: 180px; */
+}
+.info
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+.info:hover
+{
+  background-color: #c9116a46;;
+  /* color: antiquewhite; */
+
+}
+
+.info1
+{
+  border: #e84393;
+}
+.products
+{
+  padding-top: 300px;
+}
+.heading
+{
+  padding-left: 560px;
+  margin-bottom: 30px;
+  background-color: #ce3b8246;
+  margin-top: 10px;
+}
+
+.heading span
+{
+  color: #720a3ccc;
+}
+
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* .products .box-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.7rem 1rem;
+  font-size: 2rem;
+  color:rgb(196, 52, 153)
+  background: rgba(255, 51, 153, 0.05);
+  z-index: 1;
+  border-radius: 0.5rem;
+} */
+
+.products .box-container .box .image {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+.products .box-container .box .image img {
+  height: 25rem;
+}
+
+.products .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.products .box-container .box:hover .image .icons {
+  bottom: 0;
+}
+
+.products .box-container .box .image .icons a {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background:#bb2f73a2;
+  color: #1f1419;
+}
+
+.products .box-container .box .image .icons .cart-btn {
+  border-left: 0.1rem solid #fff7;
+  border-right: 0.1rem solid #fff7;
+  width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover {
+  background: #a074b1be;
+}
+
+.products .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.products .box-container .box .content .price {
+  font-size: 2.5rem;
+  color: #6b0e3b;
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span {
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+.review .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+  position: relative;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background-color: #8a4c6a31;
+}
+
+.review .box-container .box .fa-quote-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 6rem;
+  color: #bdaf91;
+}
+
+.review .box-container .box .stars i {
+  color:#be437f;
+  font-size: 2rem;
+}
+
+.review .box-container .box p {
+  color: #3d3c3c;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 2rem;
+}
+
+.review .box-container .box .user {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.review .box-container .box .user img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.review .box-container .box .user h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.review .box-container .box .user span {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.review
+{
+  padding-top: 60px;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  margin-top: 20px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background: #8a4c6a31;
+  border-radius: 0.5rem;
+}
+
+.contact .row form .btn
+{
+  margin-top: 20px;
+  margin-left: 280px;
+  font-size: 15px;
+  border: solid 1px bdaf91;
+  border-radius: 20px;
+}
+
+.contact .row form .btn:hover
+{
+  background-color: #6b0e3b;
+  color: #bdaf91;
+}
+
+.contact .row .image {
+  flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333333;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 0.7rem 0;
+  margin-left: 120px;
+  width: 400px;
+}
+
+.contact .row form .box:focus {
+  border-color: var(--pink);
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.contact
+{
+  padding-top: 75px;
+}
+
+
+
+footer {
+  background: #212529;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer a:hover, a:focus {
+  text-decoration: none;
+}
+
+.cp
+{
+  font-size: 15px;
+  color: #bdaf91;
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+.ql
+{
+  font-size: 30px;
+  color: #bdaf91;
+  margin-left: 150px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: underline;
+}
+
+.ql1
+{
+  font-size: 15px;
+  color: rgb(206, 152, 82);
+  margin-left: 120px;
+}
